@@ -110,11 +110,13 @@ const findSecret = (data) => {
   return foundMatchingConstant; // Return the matching constant or null
 };
 
-// Example usage
+const array = [];
 const data1 = require("./data1.json");
 const secret1 = findSecret(data1);
-console.log(`Secret for Data 1: ${secret1}`); // 3.00000
+array.push(secret1);
 
 const data2 = require("./data2.json");
 const secret2 = findSecret(data2);
-console.log(`Secret for Data 2: ${secret2}`); // 28735619723864.00000
+array.push(secret2);
+
+console.log(array);
